@@ -26,4 +26,11 @@ function cambiarColor(){
     x.css("background-color" , "rgb(86, 110, 110)");
 }
 
+Ejercicio 3
+
+$(document).ready(function() {
+    $("#miLista li").click(function() {
+        $(this).hide();
+    });
+});
 */
