@@ -1,3 +1,13 @@
-.tabla{
-    background-color: aqua;
+.asignar1{
+    background-color: blue;
+}
+
+.asignar2{
+    background-color: blueviolet;
+}
+
+.anchuraYAltura{
+    width: 200px;
+    height: 200px;
+    border:solid 3px;
 }
