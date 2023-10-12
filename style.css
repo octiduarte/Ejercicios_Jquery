@@ -11,3 +11,13 @@
     height: 200px;
     border:solid 3px;
 }
+
+.dimension{
+    width: 800px;
+    height: 70px;
+    border: solid 2px;
+}
+
+.color{
+  color: blue;
+}

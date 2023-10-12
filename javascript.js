@@ -26,14 +26,6 @@ function cambiarColor(){
     x.css("background-color" , "rgb(86, 110, 110)");
 }
 
-Ejercicio 3
-
-$(document).ready(function() {
-    $("#miLista li").click(function() {
-        $(this).hide();
-    });
-});
-*/
 Ejercicio 9
 
 
@@ -141,4 +133,86 @@ function mouseFuera(event){
   let p = $("p");
   p.text("salio del div");
 }
-     */
+
+
+let x = $(document);
+x.ready(inicializarEventos);
+
+function inicializarEventos() {
+  let x = $("#button1");
+  let y = $("#button2");
+  x.mousedown(presionaMouse);
+  x.mouseup(sueltaMouse);
+  y.mousedown(presionaMouse);
+  y.mouseup(sueltaMouse);
+}
+
+function presionaMouse() {
+  $(this).css("background-color", "#ff0");
+}
+
+function sueltaMouse() {
+  $(this).css("background-color", "#fff");
+}
+
+Ejercicio 16
+
+let x = $(document);
+x.ready(inicializarEventos);
+
+function inicializarEventos() {
+  let x = $("div");
+  x.dblclick(dobleClic);
+}
+
+function dobleClic() {
+  let x = $("div");
+  x.css({"width": "250px", "height": "250px"});
+  x.dblclick(quitar);
+}
+function quitar() {
+  let x = $("div");
+  x.css({"width": "800px", "height": "70px"});
+  x.dblclick(dobleClic);
+}
+ Ejercicio 17
+
+let x = $(document);
+x.ready(inicializarEventos);
+
+function inicializarEventos() {
+  let x = $("input");
+  x.focus(tomaFoco);
+}
+
+function tomaFoco() {
+  let x = $("input");
+  x.css("color", "red");
+}
+
+Ejercici 17
+
+let x = $(document);
+x.ready(inicializarEventos);
+
+function inicializarEventos() {
+  let x = $("#text1");
+  x.focus(tomaFoco);
+  x.blur(pierdeFoco);
+  x = $("#text2");
+  x.focus(tomaFoco);
+  x.blur(pierdeFoco);
+}
+
+function tomaFoco() {
+  let x = $(this);
+  x.attr("value", "");
+}
+
+function pierdeFoco() {
+  let x = $(this);
+  if(x.val("")){
+    alert("No ingreso datos");
+  }
+}
+*/
